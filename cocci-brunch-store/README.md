@@ -29,12 +29,16 @@ cocci-brunch-store/
 
 À la demande du client (page d'accueil "plus blanche et simple"), le hero n'utilise plus de photo en fond : logo centré sur fond blanc, accroche et boutons d'action. Le logo a été nettoyé (fond transparent) à partir de la capture reçue, et recadré pour le header, le hero et le favicon (coccinelle seule).
 
-## Palette (dérivée du logo, confirmée sur les photos du lieu)
+## Palette (couleur exacte du logo)
 
-- Crème (fond) : `#FAF4E6`
+- Beige (fond, échantillonné sur le fond du logo) : `#FEF9F0`
 - Bordeaux (accent principal, texte du logo, mobilier terrasse) : `#7A2B1B`
 - Bordeaux foncé (hover) : `#5C1F12`
 - Encre quasi-noire (texte, détails coccinelle) : `#241C17`
+
+## Curseur personnalisé
+
+Le curseur de la souris est une petite coccinelle (`assets/images/logo/cursor-ladybug.png`, 32×32, recadrée depuis le logo), appliquée sur tout le site via `cursor: var(--cursor-ladybug)`.
 
 ## Ce qu'il reste à faire
 

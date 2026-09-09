@@ -4,14 +4,15 @@
    ========================================================================== */
 
 :root {
-  /* Palette dérivée du logo Cocci Brunch Store (crème / bordeaux / noir) */
-  --color-cream: #FAF4E6;
-  --color-cream-dark: #F0E4CC;
+  /* Palette dérivée du logo Cocci Brunch Store (beige exact du logo / bordeaux / noir) */
+  --color-cream: #FEF9F0;
+  --color-cream-dark: #F4EAD7;
   --color-brand: #7A2B1B;
   --color-brand-dark: #5C1F12;
   --color-ink: #241C17;
   --color-ink-soft: #5C534B;
   --color-white: #FFFFFF;
+  --cursor-ladybug: url('../assets/images/logo/cursor-ladybug.png') 6 6, auto;
 
   --font-heading: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
@@ -30,8 +31,10 @@ body {
   color: var(--color-ink);
   background: var(--color-cream);
   line-height: 1.6;
+  cursor: var(--cursor-ladybug);
 }
 img { max-width: 100%; display: block; }
+a, button, .btn, .nav-toggle { cursor: var(--cursor-ladybug); }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; margin: 0; padding: 0; }
 h1, h2, h3 { font-family: var(--font-heading); font-weight: 600; line-height: 1.15; margin: 0 0 .6em; }
