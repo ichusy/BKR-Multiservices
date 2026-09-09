@@ -1,20 +1,35 @@
 # Cocci Brunch Store — site vitrine
 
-Squelette technique en attente de contenu (photos des plats et du lieu, animation hero).
+Contenu (menu, à propos, avis) rédigé à partir des photos vues en aperçu chat. Il manque encore les **fichiers réels** des images pour qu'elles s'affichent sur le site — voir la liste exacte ci-dessous.
 
 ## Structure
 
 ```
 cocci-brunch-store/
-├── index.html          # squelette sémantique (header, hero, à propos, menu, avis, contact, footer)
+├── index.html          # header, hero, à propos, menu, avis, contact, footer — contenu rédigé
 ├── css/style.css        # palette dérivée du logo (crème / bordeaux / noir) + typographie + responsive
 ├── js/main.js            # toggle du menu mobile
 └── assets/images/
-    ├── logo/               # fichier logo officiel (PNG/SVG) — reçu en aperçu chat, fichier à fournir
-    ├── hero/             # média hero (animation Higgsfield ou photo/vidéo fournie)
-    ├── menu/              # photos des plats
-    └── lieu/               # photos du lieu / concept store
+    ├── logo/
+    ├── hero/
+    ├── menu/
+    └── lieu/
 ```
+
+## Fichiers images attendus (noms exacts déjà câblés dans index.html)
+
+| Emplacement | Fichier attendu | Contenu |
+|---|---|---|
+| `assets/images/logo/` | *(nom libre)* | Logo officiel PNG/SVG — à intégrer dans le header et en favicon |
+| `assets/images/hero/` | `hero.jpg` | Visuel principal du hero (photo ou vidéo) |
+| `assets/images/lieu/` | `terrasse.jpg` | Terrasse extérieure (mobilier bordeaux) |
+| `assets/images/lieu/` | `concept-store.jpg` | Coin boutique / céramiques |
+| `assets/images/menu/` | `salade-burrata-fraises.jpg` | Salade burrata, fraises, roquette, pignons |
+| `assets/images/menu/` | `tartine-burrata-jambon.jpg` | Tartine burrata, jambon, fraises, pistaches |
+| `assets/images/menu/` | `croque-cocci.jpg` | Croque-monsieur gratiné + salade |
+| `assets/images/menu/` | `burger.jpg` | Burger + salade |
+| `assets/images/menu/` | `eclair-pistache.jpg` | Duo d'éclairs pistache |
+| `assets/images/menu/` | `pain-perdu.jpg` | Pain perdu, fruits rouges, glace vanille |
 
 ## Palette (dérivée du logo)
 
@@ -23,14 +38,11 @@ cocci-brunch-store/
 - Bordeaux foncé (hover) : `#5C1F12`
 - Encre quasi-noire (texte, détails coccinelle) : `#241C17`
 
-## Ce qu'il reste à faire une fois les photos reçues
+## Ce qu'il reste à faire
 
-- Récupérer le fichier logo (PNG/SVG) en pièce jointe et le déposer dans `assets/images/logo/`
+- Récupérer les fichiers réels (logo + photos ci-dessus) via lien Drive/URL et les déposer aux emplacements indiqués
 - Intégrer le logo dans le header (à la place du logo texte) et en favicon
-- Déposer les photos dans `assets/images/{hero,menu,lieu}`
-- Intégrer le média hero dans `.hero-media` (section Hero, `index.html`)
-- Rédiger le texte "À propos" (concept store / brunch restaurant)
-- Construire les catégories du menu à partir des photos (ex : brunchs salés, sucré, boissons)
-- Ajouter 2-3 témoignages neutres dans la section Avis
+- Choisir la photo hero définitive (actuellement `hero.jpg` générique)
 - Intégrer l'iframe Google Maps dans `.contact-map`
 - Ajouter les vrais liens réseaux sociaux dans le footer
+- Relire/valider les textes (à propos, descriptions des plats) avec le client
