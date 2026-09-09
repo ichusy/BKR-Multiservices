@@ -79,7 +79,7 @@ p { margin: 0 0 1em; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(251, 246, 239, 0.92);
+  background: rgba(254, 249, 240, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-cream-dark);
   height: var(--header-height);
@@ -124,7 +124,7 @@ p { margin: 0 0 1em; }
   align-items: center;
   justify-content: center;
   min-height: 64vh;
-  background: var(--color-white);
+  background: var(--color-cream);
   padding: 5rem 0;
   text-align: center;
 }
@@ -157,7 +157,7 @@ p { margin: 0 0 1em; }
 main > section {
   padding: 5rem 0;
 }
-.about { background: var(--color-white); }
+.about { background: var(--color-cream); }
 .menu { background: var(--color-cream); }
 .reviews { background: var(--color-brand); color: var(--color-white); }
 .reviews h2 { color: var(--color-white); }
