@@ -185,18 +185,16 @@ main > section {
 
 /* ---------- Menu ---------- */
 .menu-intro { color: var(--color-ink-soft); max-width: 560px; }
-.menu-categories {
-  display: grid;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-.menu-category h3 {
+
+.menu-subheading {
   color: var(--color-brand);
   border-bottom: 2px solid var(--color-brand);
   padding-bottom: .4rem;
-  margin-bottom: 1.5rem;
+  margin: 2.5rem 0 1.5rem;
   display: inline-block;
 }
+.menu-subheading--full { display: block; }
+
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -214,10 +212,31 @@ main > section {
   object-fit: cover;
 }
 .menu-item-text { padding: 1.1rem 1.2rem; }
+.menu-item-row { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; }
 .menu-item-text h4 { font-family: var(--font-heading); font-size: 1.05rem; margin: 0 0 .4em; }
+.menu-item-price { font-size: .82rem; font-weight: 600; color: var(--color-brand); white-space: nowrap; }
 .menu-item-text p { font-size: .92rem; color: var(--color-ink-soft); margin: 0; }
-.menu-item--compact { background: transparent; box-shadow: none; }
-.menu-item--compact .menu-item-text { padding: 0; }
+
+/* ---- Toute la carte (liste sans photo) ---- */
+.menu-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+.menu-full-category h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.menu-list li { padding: .7rem 0; border-bottom: 1px solid var(--color-cream-dark); }
+.menu-list li:last-child { border-bottom: none; }
+.menu-list-row, .menu-list--extras li { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.menu-list-row span:first-child, .menu-list--extras li span:first-child { font-weight: 600; }
+.menu-list-price { color: var(--color-brand); font-weight: 600; white-space: nowrap; }
+.menu-list li p { margin: .3rem 0 0; font-size: .88rem; color: var(--color-ink-soft); }
+.menu-list em { font-style: normal; font-weight: 400; color: var(--color-ink-soft); font-size: .88rem; }
+
+.menu-note { font-size: .85rem; color: var(--color-ink-soft); margin-top: 2.5rem; }
 
 /* ---------- Avis ---------- */
 .reviews-rating {

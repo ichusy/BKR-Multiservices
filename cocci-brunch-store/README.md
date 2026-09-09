@@ -40,10 +40,17 @@ cocci-brunch-store/
 
 Le curseur de la souris est une petite coccinelle (`assets/images/logo/cursor-ladybug.png`, 32×32, recadrée depuis le logo), appliquée sur tout le site via `cursor: var(--cursor-ladybug)`.
 
+## Menu
+
+Basé sur la carte officielle (2 photos fournies via Drive). Structuré en deux parties :
+- **Les incontournables** : les 6 plats/desserts déjà photographiés, avec prix officiel quand le plat correspond à un item de la carte (sinon "Spécialité du moment" / "En vitrine" pour les pâtisseries et plats non listés sur cette carte).
+- **Toute la carte** : le reste des plats (Sucré, Salé, Extras, Boissons) en liste, sans photo, avec prix officiels.
+
+Un item du menu (nom illisible, prix hors cadre) et le début de la liste des boissons non-alcoolisées ont été omis par prudence — visibles sur la photo mais pas assez nets pour être retranscrits fidèlement.
+
 ## Ce qu'il reste à faire
 
 - Intégrer l'iframe Google Maps dans `.contact-map`.
 - Ajouter les vrais liens réseaux sociaux dans le footer.
-- Relire/valider les textes et noms de plats avec le client (descriptions rédigées à partir des photos, pas de la carte officielle).
-- Compléter le menu si d'autres catégories/plats existent (boissons notamment, actuellement sans photo).
+- Relire/valider les textes avec le client, en particulier les 2 plats "incontournables" sans prix officiel (tartine burrata/jambon, éclairs, pain perdu).
 - Si un fichier logo vectoriel (SVG) existe, il pourrait remplacer le PNG pour une netteté parfaite à toutes les tailles.
