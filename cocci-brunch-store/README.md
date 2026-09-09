@@ -1,6 +1,6 @@
 # Cocci Brunch Store — site vitrine
 
-Site construit à partir des photos réelles fournies par le client (menu, terrasse, concept store), récupérées depuis le dossier Google Drive partagé.
+Site construit à partir des photos réelles fournies par le client (logo, menu, terrasse, concept store), récupérées depuis le dossier Google Drive partagé.
 
 ## Structure
 
@@ -10,8 +10,9 @@ cocci-brunch-store/
 ├── css/style.css        # palette dérivée du logo (crème / bordeaux / noir) + typographie + responsive
 ├── js/main.js            # toggle du menu mobile
 └── assets/images/
-    ├── logo/               # logo officiel (PNG/SVG) — pas encore reçu en fichier autonome
-    ├── hero/hero.jpg        # visuel principal du hero
+    ├── logo/
+    │   ├── cocci-logo.png        # logo fond transparent (header + hero)
+    │   ├── favicon-16.png, favicon-32.png, apple-touch-icon.png
     ├── lieu/
     │   ├── terrasse.jpg       # terrasse extérieure (mobilier bordeaux)
     │   └── concept-store.jpg  # coin boutique / céramiques
@@ -24,6 +25,10 @@ cocci-brunch-store/
         └── pain-perdu.jpg
 ```
 
+## Hero simplifié
+
+À la demande du client (page d'accueil "plus blanche et simple"), le hero n'utilise plus de photo en fond : logo centré sur fond blanc, accroche et boutons d'action. Le logo a été nettoyé (fond transparent) à partir de la capture reçue, et recadré pour le header, le hero et le favicon (coccinelle seule).
+
 ## Palette (dérivée du logo, confirmée sur les photos du lieu)
 
 - Crème (fond) : `#FAF4E6`
@@ -33,9 +38,8 @@ cocci-brunch-store/
 
 ## Ce qu'il reste à faire
 
-- **Logo** : je n'ai que des photos où le logo apparaît en petit sur des cartes de menu — il faudrait le fichier logo autonome (PNG/SVG haute résolution) pour l'intégrer dans le header et en favicon (actuellement toujours en logo texte).
-- Choisir la photo hero définitive si celle par défaut (éclairs pistache + carte Cocci) ne convient pas.
 - Intégrer l'iframe Google Maps dans `.contact-map`.
 - Ajouter les vrais liens réseaux sociaux dans le footer.
 - Relire/valider les textes et noms de plats avec le client (descriptions rédigées à partir des photos, pas de la carte officielle).
 - Compléter le menu si d'autres catégories/plats existent (boissons notamment, actuellement sans photo).
+- Si un fichier logo vectoriel (SVG) existe, il pourrait remplacer le PNG pour une netteté parfaite à toutes les tailles.

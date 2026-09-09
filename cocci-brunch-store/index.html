@@ -17,13 +17,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png">
 </head>
 <body>
 
 <!-- ============ HEADER / NAVIGATION ============ -->
 <header class="site-header" id="top">
   <div class="container header-inner">
-    <a href="#top" class="logo">Cocci Brunch Store</a>
+    <a href="#top" class="logo">
+      <img src="assets/images/logo/cocci-logo.png" alt="Cocci Brunch Store" class="logo-img">
+    </a>
 
     <nav class="main-nav" id="main-nav">
       <ul>
@@ -44,11 +50,9 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="accueil">
-    <div class="hero-media" id="hero-media">
-      <img src="assets/images/hero/hero.jpg" alt="Éclairs pistache et espresso sur une table en terrasse chez Cocci Brunch Store" loading="eager">
-    </div>
     <div class="container hero-content">
-      <h1>Cocci Brunch Store</h1>
+      <h1 class="visually-hidden">Cocci Brunch Store</h1>
+      <img src="assets/images/logo/cocci-logo.png" alt="" aria-hidden="true" class="hero-logo">
       <p class="hero-tagline">Brunch gourmand et concept store à Waterloo, entre bons plats et jolis objets.</p>
       <div class="hero-actions">
         <a href="#menu" class="btn btn-primary">Voir le menu</a>
