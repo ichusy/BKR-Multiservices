@@ -4,15 +4,13 @@
    ========================================================================== */
 
 :root {
-  /* Palette provisoire (crème / terracotta / vert sauge) */
-  --color-cream: #FBF6EF;
-  --color-cream-dark: #F1E7D8;
-  --color-terracotta: #C56A4B;
-  --color-terracotta-dark: #A6512F;
-  --color-sage: #8A9A7E;
-  --color-sage-dark: #6C7A5F;
-  --color-ink: #2E2A26;
-  --color-ink-soft: #5B5650;
+  /* Palette dérivée du logo Cocci Brunch Store (crème / bordeaux / noir) */
+  --color-cream: #FAF4E6;
+  --color-cream-dark: #F0E4CC;
+  --color-brand: #7A2B1B;
+  --color-brand-dark: #5C1F12;
+  --color-ink: #241C17;
+  --color-ink-soft: #5C534B;
   --color-white: #FFFFFF;
 
   --font-heading: 'Fraunces', serif;
@@ -56,8 +54,8 @@ p { margin: 0 0 1em; }
   transition: transform .15s ease, background .15s ease;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--color-terracotta); color: var(--color-white); }
-.btn-primary:hover { background: var(--color-terracotta-dark); }
+.btn-primary { background: var(--color-brand); color: var(--color-white); }
+.btn-primary:hover { background: var(--color-brand-dark); }
 .btn-secondary { background: transparent; border: 1.5px solid var(--color-ink); color: var(--color-ink); }
 .btn-secondary:hover { background: var(--color-ink); color: var(--color-white); }
 
@@ -82,14 +80,14 @@ p { margin: 0 0 1em; }
   font-family: var(--font-heading);
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--color-terracotta-dark);
+  color: var(--color-brand);
 }
 .main-nav ul { display: flex; gap: 2rem; }
 .main-nav a {
   font-weight: 500;
   font-size: .95rem;
 }
-.main-nav a:hover { color: var(--color-terracotta-dark); }
+.main-nav a:hover { color: var(--color-brand); }
 
 .nav-toggle {
   display: none;
@@ -131,7 +129,7 @@ p { margin: 0 0 1em; }
 }
 .hero h1 {
   font-size: clamp(2.6rem, 6vw, 4.2rem);
-  color: var(--color-terracotta-dark);
+  color: var(--color-brand);
 }
 .hero-tagline {
   font-size: 1.2rem;
@@ -150,7 +148,7 @@ main > section {
 }
 .about { background: var(--color-white); }
 .menu { background: var(--color-cream); }
-.reviews { background: var(--color-sage); color: var(--color-white); }
+.reviews { background: var(--color-brand); color: var(--color-white); }
 .reviews h2 { color: var(--color-white); }
 .contact { background: var(--color-cream-dark); }
 
@@ -162,8 +160,8 @@ main > section {
   margin-top: 2rem;
 }
 .menu-category h3 {
-  color: var(--color-terracotta-dark);
-  border-bottom: 2px solid var(--color-terracotta);
+  color: var(--color-brand);
+  border-bottom: 2px solid var(--color-brand);
   padding-bottom: .4rem;
   margin-bottom: 1rem;
 }
