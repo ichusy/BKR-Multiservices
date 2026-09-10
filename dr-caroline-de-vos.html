@@ -541,11 +541,42 @@
     border-radius:var(--radius-lg);
     overflow:hidden;
     box-shadow:var(--shadow);
-    min-height:340px;
+    display:flex;
+    flex-direction:column;
+    min-height:400px;
+  }
+  .map-frame-wrap{
     position:relative;
+    flex:1;
+    min-height:320px;
   }
   .map-card iframe{
-    width:100%;height:100%;min-height:340px;border:0;position:absolute;inset:0;
+    width:100%;height:100%;border:0;position:absolute;inset:0;
+  }
+  .map-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    background:var(--white);
+    padding:16px 22px;
+    border-top:1px solid rgba(13,148,136,.12);
+  }
+  .map-bar p{font-size:.85rem;color:var(--ink-soft);line-height:1.4;}
+  .map-bar p strong{display:block;color:var(--teal-deep);font-family:var(--font-head);font-size:.92rem;}
+  .map-hint{
+    position:absolute;
+    top:14px;left:14px;
+    background:var(--white);
+    color:var(--teal-deep);
+    font-size:.78rem;
+    font-weight:800;
+    padding:8px 14px;
+    border-radius:999px;
+    box-shadow:0 8px 18px rgba(20,49,45,.18);
+    display:flex;align-items:center;gap:6px;
+    pointer-events:none;
   }
 
   /* ===========================================================
@@ -911,12 +942,22 @@
       </div>
 
       <div class="map-card reveal reveal-delay-1">
-        <iframe
-          src="https://www.google.com/maps?q=Linkebeeksedreef+69,+1640+Sint-Genesius-Rode&output=embed"
-          title="Localisation du cabinet du Dr Caroline De Vos, Linkebeeksedreef 69, 1640 Sint-Genesius-Rode"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="map-frame-wrap">
+          <span class="map-hint" aria-hidden="true">📍 Zoomez / déplacez la carte</span>
+          <iframe
+            src="https://www.google.com/maps?q=Linkebeeksedreef+69,+1640+Sint-Genesius-Rode&output=embed"
+            title="Localisation du cabinet du Dr Caroline De Vos, Linkebeeksedreef 69, 1640 Sint-Genesius-Rode"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="map-bar">
+          <p><strong>Cabinet Dr Caroline De Vos</strong>Linkebeeksedreef 69, 1640 Sint-Genesius-Rode</p>
+          <a class="btn btn-coral btn-sm" href="https://www.google.com/maps/dir/?api=1&destination=Linkebeeksedreef+69,+1640+Sint-Genesius-Rode" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Itinéraire
+          </a>
+        </div>
       </div>
     </div>
   </div>
